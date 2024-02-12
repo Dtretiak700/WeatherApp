@@ -1,0 +1,127 @@
+@import url('https://fonts.cdnfonts.com/css/artico');
+
+body {
+    background-color: #028dcc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    background: rgba(43, 50, 65, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(43, 50, 65, 0.3);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 600px;
+}
+
+.first-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#input {
+    border-radius: 16px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgba(241, 241, 241, 0.432);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: 'Artico Expanded', sans-serif;
+}
+
+#input:focus {
+    background-color: rgba(241, 241, 241, 0.432);
+}
+
+.temp-city-container {
+    margin-right: 30px;
+}
+
+#temperature {
+    font-family: 'Artico', sans-serif;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 0%;
+    margin-top: 70px;
+}
+
+#city {
+    font-family: 'Artico', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    margin-top: -50px;
+    font-size: 25px;
+}
+
+#date {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #FFF;
+    font-family: 'Artico', sans-serif;
+}
+
+.extra-info {
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+#feelsLike, #variation, #wind {
+    font-family: 'Artico', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+#conditions {
+    font-family: 'Artico', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+@media all and (max-width: 500px) {
+    .main-container {
+        width: 400px;
+    }
+
+    #temperature {
+        font-size: 70px;
+    }
+
+    #city {
+        margin-top: 10px;
+    }
+
+    .first-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+
+    #feelsLike, #variation, #wind {
+        font-size: 15px;
+    }
+    
+    #conditions {
+        font-size: 30px;
+    }
+
+    .input-container {
+        margin-left: 5px;
+    }
+}
